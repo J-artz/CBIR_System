@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/darcula.jar"/>
+	<classpathentry kind="lib" path="lib/lire.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-analyzers-common-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-codecs-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queryparser-6.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/opencv-2411.jar"/>
+	<classpathentry kind="output" path="out/production/CBIR_Assignment2"/>
+</classpath>

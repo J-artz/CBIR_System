@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="CBIR_Main.MainForm">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="8" left="8" bottom="8" right="8"/>
+    <constraints>
+      <xy x="20" y="20" width="1163" height="621"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="f2867" class="javax.swing.JButton" binding="selectDirectoryButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="true"/>
+          <focusable value="true"/>
+          <font name="Roboto" style="0"/>
+          <text value="Select Directory"/>
+        </properties>
+      </component>
+      <component id="9c3ac" class="javax.swing.JTextField" binding="dirText">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <focusable value="false"/>
+        </properties>
+      </component>
+      <tabbedpane id="52cf9" binding="mainTabPane">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <focusable value="false"/>
+        </properties>
+        <border type="empty" title-justification="2">
+          <font name="Roboto" size="14" style="0"/>
+          <title-color color="-4473925"/>
+          <size top="15" left="0" bottom="10" right="0"/>
+          <color color="-8355712"/>
+        </border>
+        <children>
+          <grid id="94e6e" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="8" left="8" bottom="8" right="8"/>
+            <constraints>
+              <tabbedpane title="Input Image"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="7f257" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="8" left="8" bottom="8" right="8"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="3" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="5d5ce" class="javax.swing.JButton" binding="selectImageButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <enabled value="true"/>
+                      <focusable value="true"/>
+                      <font name="Roboto" style="0"/>
+                      <hideActionText value="true"/>
+                      <text value="Select Image"/>
+                      <toolTipText value="Create a reference data set first."/>
+                    </properties>
+                  </component>
+                  <component id="e194" class="javax.swing.JButton" binding="extractFeatureButton">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Roboto" style="0"/>
+                      <text value="Extract Feature"/>
+                    </properties>
+                  </component>
+                  <component id="66e3b" class="javax.swing.JLabel" binding="imagePreviewLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Roboto" style="0"/>
+                      <text value="Image Preview"/>
+                    </properties>
+                  </component>
+                  <component id="1281b" class="javax.swing.JTextField" binding="inputImageField">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <requestFocusEnabled value="false"/>
+                      <verifyInputWhenFocusTarget value="false"/>
+                    </properties>
+                  </component>
+                  <scrollpane id="36a47" binding="scroller">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalScrollBarPolicy value="32"/>
+                      <verticalScrollBarPolicy value="22"/>
+                    </properties>
+                    <border type="empty"/>
+                    <children>
+                      <grid id="22539" binding="ImageHolder" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties/>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <component id="fe002" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Roboto" size="16" style="1"/>
+                  <text value="Input Image"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="cab1e" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="8" left="8" bottom="8" right="8"/>
+            <constraints>
+              <tabbedpane title="Image Query"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="c793a" binding="queryResultPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="8" left="8" bottom="8" right="8"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <component id="a12b7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Click On &quot;Query Images&quot; To Get A List of Similar Images"/>
+                </properties>
+              </component>
+              <grid id="5c631" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="82df8" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Roboto" size="16" style="1"/>
+                      <text value="Image Query Method"/>
+                    </properties>
+                  </component>
+                  <component id="e9cd4" class="javax.swing.JComboBox" binding="queryComboBox">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="CEDD"/>
+                        <item value="FCTH"/>
+                        <item value="AutoColorCorrelogram"/>
+                        <item value="ColorLayout"/>
+                      </model>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="5508b" class="javax.swing.JButton" binding="queryImageButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Query Images"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="f58c7" class="javax.swing.JLabel" binding="dirLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <alignmentX value="0.0"/>
+          <font name="Roboto" size="9" style="0"/>
+          <horizontalTextPosition value="4"/>
+          <text value="No Indexed Data"/>
+          <toolTipText value="Select directory of desired images to create a data set"/>
+          <verifyInputWhenFocusTarget value="false"/>
+          <verticalAlignment value="1"/>
+          <verticalTextPosition value="1"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="cddc5" class="javax.swing.JButton" binding="createRefButton">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="true"/>
+          <contentAreaFilled value="false"/>
+          <defaultCapable value="false"/>
+          <enabled value="true"/>
+          <focusPainted value="true"/>
+          <focusable value="true"/>
+          <font name="Roboto" style="0"/>
+          <hideActionText value="true"/>
+          <text value="Create Reference Data Set"/>
+          <toolTipText value="Create reference images from the selected directory"/>
+        </properties>
+      </component>
+      <component id="34e18" class="javax.swing.JProgressBar" binding="indexProgressBar">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <borderPainted value="true"/>
+          <doubleBuffered value="true"/>
+          <focusable value="false"/>
+          <font name="Roboto" size="11" style="0"/>
+          <foreground color="-8355712"/>
+          <indeterminate value="false"/>
+          <string value="0%"/>
+          <stringPainted value="true"/>
+          <value value="0"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

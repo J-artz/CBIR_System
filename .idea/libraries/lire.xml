@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lire">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/lire.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/darcula.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene-analyzers-common-6.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene-core-6.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene-queryparser-6.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opencv-2411.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lucene-codecs-6.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
